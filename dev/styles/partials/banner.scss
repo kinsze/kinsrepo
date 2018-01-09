@@ -1,0 +1,30 @@
+.banner {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0;
+    border-top: 2.5px solid #a4b45c;
+}
+
+h1 {
+    font-size: 16px * (1.618 * 1.618 * 1.618);
+    font-weight: 100;
+}
+
+#name {
+    font-weight: 200;
+}
+
+.logo {
+    width: 20%;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.eLogo {
+    background-image: url(../../assets/logos/bamboo-logo-100px-width.png);
+}
+
+.cLogo {
+    background-image: url(../../assets/logos/史堅源功夫健身_character_90px-height.png);
+}

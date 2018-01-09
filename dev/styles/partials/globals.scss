@@ -1,0 +1,28 @@
+$fontFam: 'Roboto';
+$fontSize: '15px';
+$black: '#1e1e1e';
+$green: '#a4b45c';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: #fff;
+    text-rendering: optimizeLegibility;
+    font-family: $fontFam;
+    font-size: $fontSize;
+}
+
+.wrapper {
+    display: block;
+    margin: 0 auto;
+    max-width: 1070px;
+    padding: 0 5px;
+}
+
+.hidden {
+    display: none;
+}

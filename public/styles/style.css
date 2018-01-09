@@ -1,0 +1,324 @@
+@charset "UTF-8";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  background: #fff;
+  text-rendering: optimizeLegibility;
+  font-family: "Roboto";
+  font-size: "15px"; }
+
+.wrapper {
+  display: block;
+  margin: 0 auto;
+  max-width: 1070px;
+  padding: 0 5px; }
+
+.hidden {
+  display: none; }
+
+.navIcons {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding: 5px 0;
+  border-top: solid 5px #a4b45c;
+  width: 100%; }
+
+.icon {
+  padding: 20px 40px;
+  background-color: #fff;
+  border: none;
+  background-position: center 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.3s; }
+
+.icon:focus {
+  outline: 0;
+  border-bottom: solid 4px #a4b45c; }
+
+.icon:hover {
+  transform: scale(1.15); }
+
+.infoIcon {
+  background-image: url(../../assets/icons/info.svg); }
+
+.scheduleIcon {
+  background-image: url(../../assets/icons/schedule.svg); }
+
+.pricingIcon {
+  background-image: url(../../assets/icons/price.svg); }
+
+.contactIcon {
+  background-image: url(../../assets/icons/contact.svg); }
+
+.loginIcon {
+  font-size: 25.888px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #1e1e1e; }
+
+.banner {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0;
+  border-top: 2.5px solid #a4b45c; }
+
+h1 {
+  font-size: 67.77282px;
+  font-weight: 100; }
+
+#name {
+  font-weight: 200; }
+
+.logo {
+  width: 20%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.eLogo {
+  background-image: url(../../assets/logos/bamboo-logo-100px-width.png); }
+
+.cLogo {
+  background-image: url(../../assets/logos/史堅源功夫健身_character_90px-height.png); }
+
+.dropMenu {
+  display: flex;
+  justify-content: space-around;
+  list-style: none; }
+
+.dropMenu button {
+  font-size: 25.888px;
+  background: transparent;
+  border: none;
+  padding: 10px;
+  font-weight: 700;
+  transition: 0.3s; }
+
+.dropMenu button:hover, .dropMenu button:active, .dropMenu button:focus {
+  background: #a4b45c;
+  color: #fff;
+  outline: none; }
+
+.infoDrop button {
+  width: 20%; }
+
+.scheduleDrop button {
+  width: 50%; }
+
+@media (max-width: 480px) {
+  .wrapper {
+    max-width: 480px;
+    margin: 0 auto;
+    position: relative; }
+  h1 {
+    font-size: 25.888px; }
+  h2, h3 {
+    font-size: 16px; }
+  .dropMenu button {
+    font-size: 16px;
+    padding: 0px; }
+  .icon {
+    padding: 10px 20px; }
+  .dropMenu button {
+    font-size: 12px; }
+  .contactInfo a p {
+    font-size: 25.888px; } }
+
+@media (min-width: 480px) and (max-width: 918px) {
+  .wrapper {
+    max-width: 918px;
+    margin: 0 auto;
+    position: relative; }
+  h1 {
+    font-size: 41.88678px; } }
+
+.scheduleContainer {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-top: 20px;
+  transition: 0.3s; }
+
+.locay h2 {
+  border-bottom: 2px solid #a4b45c; }
+
+.locay h3 {
+  padding: 20px 0; }
+
+.classTime li {
+  list-style: none;
+  padding: 10px 0; }
+
+@charset "UTF-8";
+.banner {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0;
+  border-top: 2.5px solid #a4b45c; }
+
+h1 {
+  font-size: 67.77282px;
+  font-weight: 100; }
+
+#name {
+  font-weight: 200; }
+
+.logo {
+  width: 20%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat; }
+
+.eLogo {
+  background-image: url(../../assets/logos/bamboo-logo-100px-width.png); }
+
+.cLogo {
+  background-image: url(../../assets/logos/史堅源功夫健身_character_90px-height.png); }
+
+.dropMenu {
+  display: flex;
+  justify-content: space-around;
+  list-style: none; }
+
+.dropMenu button {
+  font-size: 25.888px;
+  background: transparent;
+  border: none;
+  padding: 10px;
+  font-weight: 700;
+  transition: 0.3s; }
+
+.dropMenu button:hover, .dropMenu button:active, .dropMenu button:focus {
+  background: #a4b45c;
+  color: #fff;
+  outline: none; }
+
+.infoDrop button {
+  width: 20%; }
+
+.scheduleDrop button {
+  width: 50%; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  background: #fff;
+  text-rendering: optimizeLegibility;
+  font-family: "Roboto";
+  font-size: "15px"; }
+
+.wrapper {
+  display: block;
+  margin: 0 auto;
+  max-width: 1070px;
+  padding: 0 5px; }
+
+.hidden {
+  display: none; }
+
+.navIcons {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding: 5px 0;
+  border-top: solid 5px #a4b45c;
+  width: 100%; }
+
+.icon {
+  padding: 20px 40px;
+  background-color: #fff;
+  border: none;
+  background-position: center 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.3s; }
+
+.icon:focus {
+  outline: 0;
+  border-bottom: solid 4px #a4b45c; }
+
+.icon:hover {
+  transform: scale(1.15); }
+
+.infoIcon {
+  background-image: url(../../assets/icons/info.svg); }
+
+.scheduleIcon {
+  background-image: url(../../assets/icons/schedule.svg); }
+
+.pricingIcon {
+  background-image: url(../../assets/icons/price.svg); }
+
+.contactIcon {
+  background-image: url(../../assets/icons/contact.svg); }
+
+.loginIcon {
+  font-size: 25.888px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #1e1e1e; }
+
+@media (max-width: 480px) {
+  .wrapper {
+    max-width: 480px;
+    margin: 0 auto;
+    position: relative; }
+  h1 {
+    font-size: 25.888px; }
+  h2, h3 {
+    font-size: 16px; }
+  .dropMenu button {
+    font-size: 16px;
+    padding: 0px; }
+  .icon {
+    padding: 10px 20px; }
+  .dropMenu button {
+    font-size: 12px; }
+  .contactInfo a p {
+    font-size: 25.888px; } }
+
+@media (min-width: 480px) and (max-width: 918px) {
+  .wrapper {
+    max-width: 918px;
+    margin: 0 auto;
+    position: relative; }
+  h1 {
+    font-size: 41.88678px; } }
+
+.contactInfo a {
+  text-decoration: none;
+  color: #1e1e1e;
+  text-align: center;
+  font-size: 41.88678px; }
+
+.contactInfo a p {
+  padding: 30px 0; }
+
+.scheduleContainer {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding-top: 20px;
+  transition: 0.3s; }
+
+.locay h2 {
+  border-bottom: 2px solid #a4b45c; }
+
+.locay h3 {
+  padding: 20px 0; }
+
+.classTime li {
+  list-style: none;
+  padding: 10px 0; }

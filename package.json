@@ -1,0 +1,40 @@
+{
+  "name": "ksze",
+  "version": "1.0.0",
+  "description": "**Edit a file, create a new file, and clone from Bitbucket in under 2 minutes**",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://kinsze@bitbucket.org/kinsze/ksze.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/kinsze/ksze#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babelify": "^8.0.0",
+    "browser-sync": "^2.18.13",
+    "browserify": "^14.5.0",
+    "connect-history-api-fallback": "^1.5.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "jquery": "^3.2.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-iframe": "^1.1.0",
+    "react-router-dom": "^4.2.2",
+    "react-router-tabs": "^1.0.3",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.9.0"
+  }
+}

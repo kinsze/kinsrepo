@@ -1,0 +1,59 @@
+@mixin respond-to($breakpoint) {
+    @if $breakpoint=='small' {
+        @media (max-width: 480px) {
+            @content;
+        }
+    }
+    @else if $breakpoint=='medium' {
+        @media (min-width: 480px) and (max-width: 918px) {
+            @content;
+        }
+    }
+}
+
+@include respond-to('small') {
+    .wrapper {
+        max-width: 480px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    h1 {
+        font-size: 16px * 1.618;
+    }
+
+    h2, h3 {
+        font-size: 16px;
+    }
+
+    .dropMenu button {
+        font-size: 16px;
+        padding: 0px;
+    }
+
+    .icon {
+        padding: 10px 20px;
+    }
+
+    .dropMenu button {
+        font-size: 12px;
+    }
+
+    .contactInfo a p {
+        font-size: 16px * 1.618;
+    }
+
+}
+
+@include respond-to('medium') {
+    .wrapper {
+        max-width: 918px;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    h1 {
+        font-size: 16px * (1.618 * 1.618);
+    }
+
+}

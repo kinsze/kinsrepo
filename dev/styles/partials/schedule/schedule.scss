@@ -1,0 +1,20 @@
+.scheduleContainer {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 20px;
+    transition: 0.3s;
+}
+
+.locay h2 {
+    border-bottom: 2px solid #a4b45c;
+}
+
+.locay h3 {
+    padding: 20px 0;
+}
+
+.classTime li{
+    list-style: none;
+    padding: 10px 0;
+}
