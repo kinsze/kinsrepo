@@ -1,11 +1,11 @@
 import React from 'react';
 import Iframe from 'react-iframe';
-import Calendar from '../iframes/calendarIframe.js';
+import { Zenplanner, ScriptZenplanner } from '../iframes/zenPlannerIframe.js';
 
 const Contact = () => {
     return (
         <div className="calendar">
-            <Calendar />
+            <ZenPlanner /><ScriptZenplanner />
         </div>
     );
 }

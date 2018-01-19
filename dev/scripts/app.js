@@ -15,11 +15,11 @@ import Login from './login/login.js';
 import { BrowserRouter as Router, Route, Link, NavLink, Redirect } from 'react-router-dom';
 import { Switch } from 'react-router';    
 import { ajax } from 'jquery';
-import { RoutedTabs, NavTab } from 'react-router-tabs';
 import NavBar from './navigation/navBar.js';
-import TabNav from './navigation/tabNav.js';
+import TabNav from './navigation/tabNav.js'; 
 
 
+ 
 
 class App extends React.Component {
     constructor() {
@@ -31,15 +31,17 @@ class App extends React.Component {
         return (
            
             <div className="wrapper">
-                <Router><div><NavBar /></div></Router>   
+                <Router><div>
+                <div><NavBar /></div>
                 <div className="banner">
                     <div className="eLogo logo"></div>
                         <h1><span id='name'>BAMBOO</span> Kung Fu</h1>
                     <div className="cLogo logo"></div>
                 </div>
-            <div><TabNav /></div>
+                </div></Router>  
                 <div id='content'>
-                <Router>
+                <Router><div>
+                    <div><TabNav /></div>
                     <div className="infoBox">
                         <Switch>
                             <Route exact path='/' component={Home} /> 
@@ -61,7 +63,7 @@ class App extends React.Component {
                             }} />
                         </Switch>  
                     </div>
-                </Router>
+                </div></Router>
                 </div> 
             </div>
         )
