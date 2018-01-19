@@ -22,6 +22,7 @@ import ScriptZenplanner from './iframes/scriptZenplanner.js';
 
 
 
+
  
 
 class App extends React.Component {
@@ -65,7 +66,7 @@ class App extends React.Component {
                                 return <p> Page Not Found </p>
                             }} />
                         </Switch>  
-                        <Zenplanner />
+                        <Zenplanner /><ScriptZenplanner />
                     </div>
                     
                 </div></Router>
