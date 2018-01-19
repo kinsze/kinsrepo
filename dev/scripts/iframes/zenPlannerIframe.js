@@ -1,4 +1,5 @@
 import React from 'react';
+import Iframe from 'react-iframe';
 
 const Zenplanner = () => {
     return (
@@ -16,12 +17,4 @@ const Zenplanner = () => {
     );
 }
 
-const ScriptZenplanner = () => {
-    return (
-        <div>
-            <script src="https://bambamboo.zenplanner.com/zenplanner/skin/js/resize.js"></script> 
-        </div>
-    );
-}
-
-export default { Zenplanner, ScriptZenplanner};
+export default Zenplanner;

@@ -17,6 +17,9 @@ import { Switch } from 'react-router';
 import { ajax } from 'jquery';
 import NavBar from './navigation/navBar.js';
 import TabNav from './navigation/tabNav.js'; 
+import Zenplanner from './iframes/zenPlannerIframe.js';
+import ScriptZenplanner from './iframes/scriptZenplanner.js';
+
 
 
  
@@ -62,8 +65,11 @@ class App extends React.Component {
                                 return <p> Page Not Found </p>
                             }} />
                         </Switch>  
+                        <Zenplanner />
                     </div>
+                    
                 </div></Router>
+                
                 </div> 
             </div>
         )
