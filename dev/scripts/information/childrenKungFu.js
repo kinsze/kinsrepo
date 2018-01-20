@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ChildrenKungFu = () => {
+const ChildrenKungfu = () => {
     return (
         <div>
             <h2>Children Kung Fu page</h2>
@@ -10,4 +10,4 @@ const ChildrenKungFu = () => {
     )
 }
 
-export default ChildrenKungFu;
+export default ChildrenKungfu;

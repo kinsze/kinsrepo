@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Home from './home/home.js';
-import AdultKungFu from './information/adultKungFu.js';
-import ChildrenKungFu from './information/childrenKungFu.js';
+import AdultKungfu from './information/adultKungFu.js';
+import ChildrenKungfu from './information/childrenKungFu.js';
 import PersonalTraining from './information/personalTraining.js';
 import SparITA from './information/sparITA.js';
 import Events from './information/events.js';
@@ -16,14 +16,10 @@ import { BrowserRouter as Router, Route, Link, NavLink, Redirect } from 'react-r
 import { Switch } from 'react-router';    
 import { ajax } from 'jquery';
 import NavBar from './navigation/navBar.js';
+import { Tab } from 'semantic-ui-react';
 import TabNav from './navigation/tabNav.js'; 
 import Zenplanner from './iframes/zenPlannerIframe.js';
 import ScriptZenplanner from './iframes/scriptZenplanner.js';
-
-
-
-
- 
 
 class App extends React.Component {
     constructor() {
@@ -48,10 +44,10 @@ class App extends React.Component {
                     <div><TabNav /></div>
                     <div className="infoBox">
                         <Switch>
-                            <Route exact path='/' component={Home} /> 
+                            
                             <Route exact path='/home' component={Home} />
-                            <Route exact path='/adult-kungfu' component={AdultKungFu}  />
-                            <Route exact path='/children-kungfu' component={ChildrenKungFu}  />
+                            <Route exact path='/adult-kungfu' component={AdultKungfu}  />
+                            <Route exact path='/children-kungfu' component={ChildrenKungfu}  />
                             <Route exact path='/personal-training' component={PersonalTraining}  />
                             <Route exact path='/sparring' component={SparITA}  />
                             <Route exact path='/spar-ITA' component={SparITA}  />
@@ -65,8 +61,8 @@ class App extends React.Component {
                             <Route render = { function () {
                                 return <p> Page Not Found </p>
                             }} />
-                        </Switch>  
-                        <Zenplanner /><ScriptZenplanner />
+                        </Switch>
+                       
                     </div>
                     
                 </div></Router>

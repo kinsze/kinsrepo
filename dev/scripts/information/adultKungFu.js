@@ -11,6 +11,8 @@ const AdultKungfu = () => {
                 Bamboo Kung Fu's martial art program.
             </p>
 
+          <img className='img-responsive' src={'../assets/images/landingOne.jpg'} alt='pic'/>
+
 
             <h2>Choy Li Fut kung fu classes</h2>
             <p>

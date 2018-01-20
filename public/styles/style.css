@@ -19,6 +19,11 @@ html {
 .hidden {
   display: none; }
 
+.img-responsive {
+  display: block;
+  padding: 5px;
+  width: 100%; }
+
 .navIcons {
   display: flex;
   list-style: none;
@@ -225,6 +230,11 @@ html {
 
 .hidden {
   display: none; }
+
+.img-responsive {
+  display: block;
+  padding: 5px;
+  width: 100%; }
 
 .navIcons {
   display: flex;

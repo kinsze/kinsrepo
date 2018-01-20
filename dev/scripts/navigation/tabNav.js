@@ -1,18 +1,22 @@
 import React from 'react';
 import { Tab } from 'semantic-ui-react';
-import { Zenplanner, ScriptZenplanner } from '../iframes/zenPlannerIframe.js';
+import Zenplanner from '../iframes/zenPlannerIframe.js';
+import AdultKungfu from '../information/adultKungFu.js';
+import PersonalTraining from '../information/personalTraining.js';
+import SparITA from '../information/sparITA.js';
+import Events from '../information/events.js';
 
 const panes = [
-  { menuItem: 'Adult <br/>Kung Fu', pane: 'Tab 1 Content this is bamboo kung fu' },
-  { menuItem: 'Children Kung Fu', pane:  '{< Zenplanner />' },
-  { menuItem: 'Personal Training', pane: 'Tab 3 Content' },
-  { menuItem: 'Spar ITA', pane: 'Tab 1 Spar ITA Content' },
-  { menuItem: 'Events', pane: 'Tab Events content' },
-  { menuItem: 'Tuina', pane: 'Tuina Content inside tab' },
+  { menuItem: 'Adult Kung Fu', render: () => <Tab.Pane><AdultKungfu /></Tab.Pane> },
+  { menuItem: 'Children Kung Fu', render: () => <Tab.Pane><Zenplanner /></Tab.Pane> },
+  { menuItem: 'Personal Training', render: () => <Tab.Pane> <PersonalTraining /> </Tab.Pane> },
+  { menuItem: 'Spar ITA', render: () => <Tab.Pane><SparITA /> </Tab.Pane> },
+  { menuItem: 'Events', render: () => <Tab.Pane><Events /></Tab.Pane> },
+  { menuItem: 'Tuina', render: () => <Tab.Pane>'Tuina Content inside tab' </Tab.Pane> },
   ]
 
 const TabNav = () => (
-  <Tab panes={panes} renderActiveOnly={false} />
+  <Tab panes={panes} />
 )
 
 export default TabNav
