@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Home from './home/home.js';
 import AdultKungfu from './information/adultKungFu.js';
@@ -16,10 +16,9 @@ import { BrowserRouter as Router, Route, Link, NavLink, Redirect } from 'react-r
 import { Switch } from 'react-router';    
 import { ajax } from 'jquery';
 import NavBar from './navigation/navBar.js';
-import { Tab } from 'semantic-ui-react';
-import TabNav from './navigation/tabNav.js'; 
 import Zenplanner from './iframes/zenPlannerIframe.js';
 import ScriptZenplanner from './iframes/scriptZenplanner.js';
+import { render } from 'react-dom';
 
 class App extends React.Component {
     constructor() {
@@ -27,10 +26,10 @@ class App extends React.Component {
         this.state = {}
     }
     render()  {       
-       
         return (
-           
+                
             <div className="wrapper">
+            
                 <Router><div>
                 <div><NavBar /></div>
                 <div className="banner">
@@ -41,7 +40,7 @@ class App extends React.Component {
                 </div></Router>  
                 <div id='content'>
                 <Router><div>
-                    <div><TabNav /></div>
+                    <div></div>
                     <div className="infoBox">
                         <Switch>
                             
@@ -62,16 +61,16 @@ class App extends React.Component {
                                 return <p> Page Not Found </p>
                             }} />
                         </Switch>
-                       
+                        <AdultKungfu />
+                        <Zenplanner />
                     </div>
                     
                 </div></Router>
-                
                 </div> 
             </div>
         )
-    
     }
 }
 
 ReactDOM.render(<App />, document.getElementById('app'));
+

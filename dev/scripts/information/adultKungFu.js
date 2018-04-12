@@ -27,6 +27,7 @@ const AdultKungfu = () => {
                 Li Fut Kung Fu system was further adapted by Tarm Sam
             </p>
             <h2>There are three main branches to Choy Li Fut</h2>
+           
             <ol>
                 <li>
                     The lineage under Chan Heung is called Hung Sing
@@ -41,6 +42,7 @@ const AdultKungfu = () => {
                     Tarm Sam created the Bak Sing Choy Li Fut (北勝蔡李佛)
                 </li>
             </ol>
+    
             <p>
                 Developed over nearly two centuries, Choy Li Fut merges the agile
                 footwork characteristic of martial arts in Northern China with powerful

@@ -8,7 +8,7 @@ $green: '#a4b45c';
     margin: 0;
     padding: 0;
 }
-
+ 
 html {
     background: #fff;
     text-rendering: optimizeLegibility;
@@ -21,6 +21,11 @@ html {
     margin: 0 auto;
     max-width: 1070px;
     padding: 0 5px;
+}
+
+
+li a {
+    display: block;
 }
 
 .hidden {
